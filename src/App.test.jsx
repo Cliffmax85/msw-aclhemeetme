@@ -5,13 +5,14 @@ import { screen, render } from '@testing-library/react'
 // 🚨
 // import rest
 // import setupServer
+import { rest, setupServer } from 'msw';
 import App from './App'
 
 const user = {
   id: 1,
   created_at: '2021-12-13T00:17:29+00:00',
   // 🚨 Add a name here
-  name: '',
+  name: 'Jimmy Jim Bob',
   avatar: 'https://thumbs.gfycat.com/NiceRequiredGrunion-size_restricted.gif',
   header: 'https://static.wikia.nocookie.net/naruto/images/5/50/Team_Kakashi.png',
   likes: ['React', 'Anime', 'Traveling', 'Living', 'Tower Defense Games', 'Card Games'],
