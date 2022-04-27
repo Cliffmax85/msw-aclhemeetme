@@ -5,7 +5,8 @@ import { screen, render } from '@testing-library/react'
 // 🚨
 // import rest
 // import setupServer
-import { rest, setupServer } from 'msw';
+import { rest } from 'msw';
+import { setupServer } from 'msw/node';
 import App from './App'
 
 const user = {
